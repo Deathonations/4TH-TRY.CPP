@@ -1,0 +1,102 @@
+//Name: Michael Maritana
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Enter;
+
+    
+    cout << "Enter the height of the triangle : "; 
+    cin >> Enter;
+
+    
+    for (int e = 1; e <= Enter; e++)
+    {
+        
+        for (int i = 1; i <= (Enter - e ); i++)
+        {
+            cout << " ";
+        }
+
+        
+        for (int j = 1; j <= e * 2 - 1; j++)
+        {
+            
+            if (j == 1 || j == e * 2 - 1)
+            {
+                cout << "*";
+            }
+            else if (e == Enter)
+            {
+                
+                cout << "*";
+            }
+            else
+            {
+                
+                cout << " ";
+            }
+
+        }
+        
+         cout << " ";
+
+        for (int i = 1; i <= (Enter - e ); i++)
+        {
+            cout << "  ";
+        }
+
+        
+        for (int j = 1; j <= e * 2 - 1; j++)
+        {
+            
+            if (j == 1 || j == e * 2 - 1)
+            {
+                cout << "*";
+            }
+            else if (e == Enter)
+            {
+                
+                cout << "*";
+            }
+            else
+            {
+                
+                cout << " ";
+            }
+
+        }
+        cout << " ";
+        for (int i = 1; i <= (Enter - e); i++)
+        {
+            cout << "  ";
+        }
+
+       
+        for (int j = 1; j <= e * 2 - 1; j++)
+        {
+           
+            if (j == 1 || j == e * 2 - 1)
+            {
+                cout << "*";
+            }
+            else if (e == Enter)
+            {
+                
+                cout << "*";
+            }
+            else
+            {
+             
+                cout << " ";
+            }
+
+        }
+
+        
+        cout << endl;
+    }
+    return 0;
+}
